@@ -181,14 +181,14 @@ section a {
     display: block;
     margin: 0 auto 20px auto;
     color: var(--text-color);
-    transition-duration: 0;
+    transition-duration: 0s;
     padding: 10px 0;
     text-decoration: none;
 }
 
 section li:hover {
     color: var(--accent-color);
-    transition-duration: 0;
+    transition-duration: 0s;
     transition: none;
     font-size: medium;
     padding:  0;
