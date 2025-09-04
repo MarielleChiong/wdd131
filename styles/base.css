@@ -24,6 +24,10 @@ body {
     background-color: var(--primary-color);
 }
 
+h1, h2, h3, p {
+    color: var(--text-color);
+}
+
 nav a {
     color: var(--link-color);
     text-decoration: none;
@@ -61,6 +65,7 @@ header span {
     font-size: 2em;
     padding: 25px 0 10px 0;
     font-family: var(--font-family-heading);
+    color: var(--secondary-color);
 }
 
 nav {
@@ -226,6 +231,12 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+    padding: 0;
+    color: var(--secondary-color);
 }
 
 #lastModified {
