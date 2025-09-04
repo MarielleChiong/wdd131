@@ -230,7 +230,7 @@ footer {
 
 #lastModified {
     font-size: 0.8em;
-    color: var(--accent-color);
+    color: var(--background-color);
     margin-top: 5px;
     text-align: center;
 }
