@@ -24,7 +24,10 @@ body {
     background-color: var(--primary-color);
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     color: var(--text-color);
 }
 
@@ -120,7 +123,7 @@ h2 {
 
 #yel:hover {
     color: var(--primary-color);
-    text-shadow: 2px 2px 5px var(--accent-color);    
+    text-shadow: 2px 2px 5px var(--accent-color);
     transition-duration: 1s;
 }
 
@@ -139,7 +142,7 @@ h2 {
 
 main div .card:first-child {
     flex: 2 1 0%;
-    min-width: 400px;
+    min-width: 150px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: min-content;
@@ -191,7 +194,7 @@ section li:hover {
     transition-duration: 0s;
     transition: none;
     font-size: medium;
-    padding:  0;
+    padding: 0;
     text-decoration: underline;
     list-style-type: disc;
 }
@@ -253,6 +256,7 @@ footer p {
     nav {
         background-color: var(--primary-color);
     }
+
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -267,23 +271,23 @@ footer p {
 
 
 @media (max-width: 850px) {
-        main div {
-            display: block;
-        }
-    
-        main div .card:first-child {
-            display: block;
-        }
-    
-        main div .card:nth-child(2) {
-            display: block;
-        }
-
-        .card p {
-            width: 100%;
-            box-sizing: border-box;
-            padding: 20px;
-            margin: 0 auto 20px auto;
-        }
-    
+    main div {
+        display: block;
     }
+
+    main div .card:first-child {
+        display: block;
+    }
+
+    main div .card:nth-child(2) {
+        display: block;
+    }
+
+    .card p {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        margin: 0 auto 20px auto;
+    }
+
+}
