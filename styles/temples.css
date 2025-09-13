@@ -202,3 +202,18 @@ figcaption {
     font-style: italic;
     color: var(--text-color);
 }
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+#lastModified {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: var(--light-text-color);
+}
