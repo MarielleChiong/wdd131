@@ -13,7 +13,8 @@
 }
 
 body {
-    font-family: var(--body-font);
+    /* font-family: var(--body-font); */
+    font-family: 'Quicksand', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     margin: 0;
@@ -23,7 +24,8 @@ body {
 h1,
 h2,
 h3 {
-    font-family: var(--header-font);
+    /* font-family: var(--header-font); */
+    font-family: 'Cinzel Decorative', serif;
     color: var(--primary-color);
 }
 
@@ -174,7 +176,8 @@ main {
 main h1 {
     text-align: center;
     margin-bottom: 1rem;
-    font-family: var(--body-font);
+    /* font-family: var(--body-font); */
+    font-family: 'Quicksand',  sans-serif;
     font-weight: 900;
 }
 
