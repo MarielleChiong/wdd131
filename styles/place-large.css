@@ -1,0 +1,150 @@
+:root {
+    --color-text-dark: #352521;
+    --color-text-light: #f7f5ea;
+    --color-text-link: #e7c350;
+
+    --color-background-dark: #352521;
+    --color-background-light: #f7f5ea;
+
+    --color-accent-dark: #72544d;
+    --color-accent-light: #c6a279;
+
+    --shadow-color: #72544d;
+    /* or change nako later if ganahan ko softer >> rgba(114, 84, 77, 0.2) */
+    --shadow: 0 4px 12px var(--shadow-color);
+
+    --font-heading: "Barlow Condensed", sans-serif;
+    --font-heading-weight: 700;
+
+    --font-paragraph: "Barlow", sans-serif;
+    --font-paragraph-weight: 400;
+    --font-paragraph-bold: 600;
+
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+
+    --radius: 15px;
+}
+
+@media (min-width: 720px) {
+
+    
+    header {
+        padding: var(--spacing-md) 0;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    main {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero {
+        position: relative;
+        display: grid;
+        grid-template-columns: 5% auto 15% auto 5%;
+        grid-template-rows: auto auto auto auto;
+        gap: var(--spacing-sm);
+    }
+
+    .hero picture {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero picture {
+        grid-column: 1/6 ;
+        grid-row: 1/5;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    section {
+        background-color: var(--color-background-light);
+        box-shadow: var(--shadow);
+    }
+
+
+    #data-card {
+        grid-row: 3/4;
+        grid-column: 2/3;
+        z-index: 2;
+        margin: var(--spacing-lg) ;
+    }
+
+    #weather-card {
+        grid-row: 2/3;
+        grid-column: 4/5;
+        z-index: 2;
+        margin: var(--spacing-lg);
+    }
+
+    #data-card,
+    #weather-card {
+        min-width: 200px;
+        padding: 0 var(--spacing-sm) var(--spacing-md);
+        background-color: rgba(247, 245, 234, 0.9);
+        color: var(--color-text-dark);
+    }
+        #data-card:hover,
+        #weather-card:hover {
+            box-shadow: none;
+        }
+
+    .data-row p , .weather-row p{
+        padding: var(--spacing-sm);
+        margin: 0;
+    }
+
+
+    #weather-card h2::after {
+        content: " 🌦️";
+        margin-left: var(--spacing-sm);
+    }
+
+
+    .weather-icon-mobile {
+        display: none;
+
+    }
+
+    .weather-icon-wide {
+        display: inline;
+    }
+
+    #data-card h2, .weather-h2 {
+        background-color: var(--color-accent-light);
+        border-radius: var(--radius);
+        padding: var(--spacing-sm) var(--spacing-lg);
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+
+        #data-card h2:hover,
+        .weather-h2:hover {
+            box-shadow: var(--shadow);
+        }
+
+
+
+
+    footer {
+        margin: 0;
+    }
+}
