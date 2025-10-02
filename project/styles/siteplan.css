@@ -1,0 +1,125 @@
+:root {
+    /* primary palette */
+    --color-primary: #DCBFA7;  /* Desert Sand – primary accent color */
+    --color-secondary: #E25C50; /* Terra Cotta – secondary accent color */
+    --color-text: #3C2415; /* Bistre – headings, body text */
+    --color-background: #F9F4F0; /* Cultured – page background */
+
+    --color-link: blue; /* link color */
+    
+
+    /* typography */
+    --font-header: 'Playfair Display', serif;
+    --font-body: 'Open Sans', sans-serif;
+    --font-accent: 'Pacifico', cursive;
+
+
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-header);
+    color: var(--color-text);
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: var(--color-text);
+    color: var(--color-primary);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--font-accent);
+    font-size: 3em;
+    margin: 0;
+    color: var(--color-primary);
+}
+
+.accent {
+    font-family: var(--font-header);
+    font-size: 1.5em;
+    margin: 0;
+    color: var(--color-primary);
+}
+
+header a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: .8em;
+    display: flex;
+    justify-content: center;
+}
+
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+
+
+a:hover {
+    text-decoration: underline;
+    color: var(--color-secondary);
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    max-width: 800px;
+    width: 90%;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin:  0;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+
+footer {
+    background-color: var(--color-text);
+    color: var(--color-primary);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
