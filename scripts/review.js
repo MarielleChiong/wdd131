@@ -20,3 +20,17 @@ document.getElementById("installation-date").textContent = params.get("install-d
 // Review Comments
 document.getElementById("review-comments").textContent = params.get("review") || "No comments";
 
+
+
+
+
+
+// Set the current year in the footer
+const currentYear = new Date().getFullYear();
+document.getElementById('currentyear').textContent = currentYear;
+
+// Set the last modified date
+const lastmod = document.querySelector('#lastModified');
+if (lastmod) {
+    lastmod.textContent = document.lastModified;
+}

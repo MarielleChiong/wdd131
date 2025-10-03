@@ -6,25 +6,15 @@
     --light-color: #F5FFFF;
 
     --font-family: 'Arial', sans-serif;
-
+    
 }
-
 
 body {
     font-family: var(--font-family);
     background-color: var(--primary-color);
     color: var(--text-color);
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-h1 {
-    color: var(--text-color);
-    text-align: center;
+    padding: 5%;
 }
 
 main {
@@ -32,11 +22,17 @@ main {
     width: 100%;
     max-width: 600px;
     min-height: 400px;
-    margin: 0 20px;
     padding: 20px;
     border: 2px solid var(--primary-color);
     border-radius: 10px;
     background-color: var(--light-color);
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--light-color);
+    text-align: center;
+    margin: 30px 0 0;
 }
 
 a {
@@ -53,4 +49,14 @@ a {
 
 a:hover {
     background-color: var(--secondary-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--light-color);
+    font-size: 0.9em;
+    
+    
+
 }
