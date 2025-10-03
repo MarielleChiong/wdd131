@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <meta name="description" content="Confirmation page for submitted product review.">
+    <meta name="author" content="Marielle Honey P. Chiong">
+
+    <link rel="stylesheet" href="styles/review.css">
+    <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>Review Confirmation</h1>
+        <section id="confirmation-message">
+            <p>Thank you for submitting your review!</p>
+        </section>
+
+        <section id="review-details">
+            <h2>Your Review Details</h2>
+            <p><strong>Product Name:</strong> <span id="product-name"></span></p>
+            <p><strong>Overall Rating:</strong> <span id="overall-rating"></span></p>
+            <p><strong>Date of Installation:</strong> <span id="installation-date"></span></p>
+            <p><strong>Review Comments:</strong></p>
+            <p id="review-comments"></p>
+        </section>
+
+        <p>You have submitted <span id="review-count">0</span> review(s).</p>
+
+        <a href="form.html">Submit another review</a>
+    </main>
+
+</body>
+</html>
