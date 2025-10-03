@@ -77,6 +77,10 @@ textarea {
 
 }
 
+input[type="date"] {
+    max-width: fit-content;
+}
+
 input[type="radio"] {
     margin-right: 5px;
 }
