@@ -109,4 +109,30 @@ textarea {
 }
 
 
+.rating-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+}
 
+.rating-option input[type="radio"] {
+    accent-color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+.rating-option label {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.rating-option:hover label {
+    color: var(--primary-color);
+}
+
+input[type="radio"]:checked+label {
+    font-weight: bold;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
