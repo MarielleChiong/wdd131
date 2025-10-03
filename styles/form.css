@@ -1,12 +1,12 @@
 :root {
+    /* color palette: https: //coolors.co/293241-3d5a80-98c1d9-c7e0ec-f5ffff */
     --primary-color: #3D5A80;
     --secondary-color: #98C1D9;
     --accent-color: #C7E0EC;
     --text-color: #293241;
     --light-color: #F5FFFF;
 
-    --font-family: 'Arial', sans-serif;
-
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 body {
@@ -30,7 +30,7 @@ form {
     border: 2px solid var(--primary-color);
     border-radius: 10px;
     background-color: var(--light-color);
-    
+
 
 
 }
@@ -74,7 +74,7 @@ textarea {
     font-family: var(--font-family);
     color: var(--text-color);
     background-color: white;
-    
+
 }
 
 input[type="radio"] {
