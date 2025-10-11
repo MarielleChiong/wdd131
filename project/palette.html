@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Crochet Philippines – A vibrant crochet community for Filipino makers.">
+    <title>The Crochet Philippines - Color Palette Generator</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&family=Playfair+Display:wght@800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="stylesheet" href="styles/palette.css">
+
+    <!-- Favicon (optional) -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Scripts -->
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/palette.js" defer></script>
+
+</head>
+
+<body>
+    <!-- Header Component -->
+    <div id="header"></div>
+    <main id="palette-generator">
+        <h2>Palette Generator</h2>
+
+        <section id="palette-instructions">
+            <h2>How to Use the Color Palette Generator</h2>
+            <ul>
+                <li>Start with 3 random colors when the page loads.</li>
+                <li>Click <strong>Add Slot</strong> to add more colors.</li>
+                <li>Click <strong>Remove Slot</strong> to delete the last one.</li>
+                <li>Use <strong>Generate Colors</strong> to refresh all current slots.</li>
+                <li>Click <strong>Save</strong> to move a color to your saved section.</li>
+                <li>Saved colors stay until you remove them manually.</li>
+            </ul>
+            <p><em>Tip: We’re working on saving your palette even after refresh—stay tuned!</em></p>
+        </section>
+
+        <div class="controls">
+            <button id="generateColors">Generate New Colors</button>
+            <button id="addSlot">Add Slot</button>
+            <button id="removeSlot">Remove Slot</button>
+        </div>
+
+        <section id="palette"></section>
+
+        <h3>Saved Colors</h3>
+        <section id="saved"></section>
+    </main>
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+</body>
+
+</html>
